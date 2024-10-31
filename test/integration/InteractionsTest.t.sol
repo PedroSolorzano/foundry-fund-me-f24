@@ -24,9 +24,9 @@ contract FundMeTestIntegration is Test {
         FundFundMe fundFundMe = new FundFundMe();
         fundFundMe.fundFundMe(address(fundMe));
 
-        // WithdrawFundMe withdrawFundMe = new WithdrawFundMe();
-        // withdrawFundMe.withdrawFundMe(address(fundMe));
+        WithdrawFundMe withdrawFundMe = new WithdrawFundMe();
+        withdrawFundMe.withdrawFundMe(address(fundMe));
 
-        // assert(address(fundMe).balance == 0);
+        assert(address(fundMe).balance == 0);
     }
 }
